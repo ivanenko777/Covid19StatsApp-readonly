@@ -2,7 +2,14 @@
 
 ## Task
 
-...
+Create an application which is showing the COVID-19 statistics (cases and death) by country. The application backend should read the data from this endpoint https://opendata.ecdc.europa.eu/covid19/nationalcasedeath/json/ ([more information here](https://www.ecdc.europa.eu/en/publications-data/data-national-14-day-notification-rate-covid-19)). Data should be read from external source only once when application is starting. The COVID-19 data should be kept in memory. You need to create rest api endpoint which provides covid-19 case and death data by country. The country should be passed as a parameter to the rest api. The web application should display the chart with two lines (cases and deaths) by week. In web application it should be possible to select the country from the dropdown list. After the country is selected the data in the chart should be refreshed. 
+Technical requirements: 
+1.	Backend should be created with node.js or springboot 
+2.	Front end needs to be created with angular.js or react.js 
+3.	Instructions how to build and run the application should be written 
+4.	Source code should be placed in github 
+5.	Docker image creation of application is optional
+
 
 ## Technologies and libraries
 * Java 11 LTS
