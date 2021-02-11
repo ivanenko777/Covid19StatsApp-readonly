@@ -30,7 +30,7 @@ cd .\backend\
 .\mvnw spring-boot:run
 ```
 
-4. You can check by running the following command in a new terminal window
+4. You can check by running the following command in a new terminal window (shown with its output):
 
 ```powershell
 > curl http://localhost:8080/api/stats/countries
