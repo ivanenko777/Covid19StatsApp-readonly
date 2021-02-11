@@ -1,9 +1,6 @@
 package net.ivanevla.covid19app.controllers;
 
 import net.ivanevla.covid19app.domain.Country;
-import net.ivanevla.covid19app.domain.CountryStats;
-import net.ivanevla.covid19app.domain.Indicator;
-import net.ivanevla.covid19app.dto.CountryDataByIndicatorDto;
 import net.ivanevla.covid19app.dto.CountryDataDto;
 import net.ivanevla.covid19app.dto.CountryDto;
 import net.ivanevla.covid19app.services.CountryService;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 

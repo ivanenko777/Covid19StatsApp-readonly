@@ -34,7 +34,7 @@ public class CountryService {
         return countryRepository.save(country);
     }
 
-    public CountryDataDto convertToCountryDataDto(Country country){
+    public CountryDataDto convertToCountryDataDto(Country country) {
         CountryDataDto countryDataDto = new CountryDataDto(country.getName());
 
         List<CountryStats> countryStats = country.getCountryStats();
