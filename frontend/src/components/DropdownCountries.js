@@ -34,7 +34,7 @@ class DropdownCountries extends Component {
 
   onChange(e) {
     this.setState({ value: e.target.value });
-    console.log("Select value changed to", e.target.value);
+    // console.log("Select value changed to", e.target.value);
   }
 
   render() {
