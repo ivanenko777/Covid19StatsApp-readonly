@@ -24,6 +24,8 @@ Technical requirements:
 * react-chartjs-2 2.11.1
 * chart.js 2.9.4
 * lodash 4.17.20
+* Docker
+* docker-compose
 
 ## Requirements
 
