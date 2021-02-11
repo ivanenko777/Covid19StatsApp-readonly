@@ -9,7 +9,7 @@
 
 On your computer must be installed:
 
-- Git [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
+- Git [installation instuctions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - Java 11 LTS [installation instuctions](https://www.oracle.com/java/technologies/javase-downloads.html)
 - Maven 3.6.3 [installation instuctions](http://maven.apache.org/install.html)
 - NodeJs 14.15.5 [installation instuctions](https://nodejs.org/en/download/)
