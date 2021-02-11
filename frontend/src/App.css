@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 60vw;
+}
