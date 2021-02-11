@@ -13,7 +13,9 @@ public class CountryStats implements Serializable {
     @JoinColumn(name = "country_id", nullable = false)
     private Country country;
     private String yearWeek;
-    private String indicator;
+
+    @Enumerated(EnumType.STRING)
+    private Indicator indicator;
     private int weeklyCount;
     private int cumulativeCount;
     private double rate14Day;
@@ -22,7 +24,7 @@ public class CountryStats implements Serializable {
     public CountryStats() {
     }
 
-    public CountryStats(Country country, String yearWeek, String indicator, int weeklyCount, int cumulativeCount, double rate14Day, String source) {
+    public CountryStats(Country country, String yearWeek, Indicator indicator, int weeklyCount, int cumulativeCount, double rate14Day, String source) {
         this.country = country;
         this.yearWeek = yearWeek;
         this.indicator = indicator;
@@ -44,7 +46,7 @@ public class CountryStats implements Serializable {
         return yearWeek;
     }
 
-    public String getIndicator() {
+    public Indicator getIndicator() {
         return indicator;
     }
 

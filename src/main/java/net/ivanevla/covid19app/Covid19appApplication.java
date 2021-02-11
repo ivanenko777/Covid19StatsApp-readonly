@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.ivanevla.covid19app.domain.Country;
 import net.ivanevla.covid19app.domain.CountryStats;
+import net.ivanevla.covid19app.domain.Indicator;
 import net.ivanevla.covid19app.services.CountryService;
 import net.ivanevla.covid19app.services.CountryStatsService;
 import org.slf4j.Logger;
@@ -43,7 +44,8 @@ public class Covid19appApplication {
                 Country country = countryService.findOrCreateNewCountry(new Country(countryName, countryCode, countryContinent, countryPopulation));
 
                 String yearWeek = item.get("year_week");
-                String indicator = item.get("indicator");
+                String indicatorString = item.get("indicator").toUpperCase();
+                Indicator indicator = Indicator.valueOf(indicatorString);
                 int weeklyCount = Integer.parseInt(item.get("weekly_count"));
                 int cumulativeCount = Integer.parseInt(item.get("cumulative_count"));
                 double rate14Day = item.get("rate_14_day") == null ? 0.0 : Double.parseDouble(item.get("rate_14_day"));
