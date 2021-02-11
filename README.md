@@ -1,4 +1,5 @@
 # Covid 19 Stats App
+
 ## Task
 
 ...
@@ -15,6 +16,7 @@ On your computer must be installed:
 - NodeJs 14.15.5 [installation instuctions](https://nodejs.org/en/download/)
 
 ## Build and run project
+
 1. Clone repository
 
 ```
@@ -63,3 +65,19 @@ serve -s build
 ```
 
 6. Open [http://localhost:5000](http://localhost:5000) in browser.
+
+## Try it with Docker
+
+You need Docker installed
+
+```
+# Run app:
+docker-compose up -d
+```
+
+Open [http://localhost:5000](http://localhost:3000) in browser.
+
+```
+# Stop app:
+docker-compose down
+```
