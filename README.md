@@ -75,7 +75,7 @@ You need Docker installed
 docker-compose up -d
 ```
 
-Open [http://localhost:5000](http://localhost:3000) in browser.
+Open [http://localhost:3000](http://localhost:3000) in browser.
 
 ```
 # Stop app:
