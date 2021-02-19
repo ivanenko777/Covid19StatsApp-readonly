@@ -99,10 +99,11 @@ You need Docker installed
 
 ```
 # Run app:
+docker-compose build
 docker-compose up -d
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in browser.
+Open [http://localhost/](http://localhost/) in browser.
 
 ```
 # Stop app:

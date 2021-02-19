@@ -1,9 +1,12 @@
 package net.ivanevla.covid19app.domain;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Table(indexes = @Index(columnList = "country_id"))
 public class CountryStats implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
