@@ -1,4 +1,5 @@
-FROM node:14.15.5-alpine
+# STAGE 1
+FROM node:14.15.5-alpine as build
 
 WORKDIR /app
 
@@ -13,5 +14,10 @@ RUN npm install --silent
 RUN npm install react-scripts@4.0.2 -g --silent
 
 COPY ./frontend ./
+RUN npm run build
 
-# CMD ["npm", "start"]
+# STAGE 2
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
