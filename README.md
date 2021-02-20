@@ -30,6 +30,7 @@ Technical requirements:
 - lodash 4.17.20
 - Docker
 - docker-compose
+- nginx
 
 ## Requirements
 
