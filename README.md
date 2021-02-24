@@ -16,21 +16,20 @@ Technical requirements:
 
 ## Technologies and libraries
 
-- Java 11 LTS
-- Spring Boot 2.4.2
-- Spring Framework 5.3.3
-- h2 1.4.200
+- **Java 11 LTS**
+- **Spring Boot 2.4.2**
+- **Spring Framework 5.3.3**
+- **h2 1.4.200**
 - NodeJs 14.15.5 LTS
-- react 17.0.1
-- react-dom 17.0.1
+- **react 17.0.1**
 - react-scripts 4.0.2
 - web-vitals 1.1.0
-- react-chartjs-2 2.11.1
-- chart.js 2.9.4
-- lodash 4.17.20
-- Docker
-- docker-compose
-- nginx
+- **react-chartjs-2 2.11.1**
+- **chart.js 2.9.4**
+- **lodash 4.17.20**
+- **Docker**
+- **docker-compose**
+- **nginx**
 
 ## Requirements
 
